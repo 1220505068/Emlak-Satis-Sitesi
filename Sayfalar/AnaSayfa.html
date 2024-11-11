@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="AnaSayfa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+            <img src="resimler/arkaplan.jpeg" alt="">
+             <a href="EmlakSitesi.html" class="hero-btn top-btn">Keşfetmeye Başlayın</a>
+    </section>
+
+    <section id="blog" class="blog">
+        <h1>İLANLAR</h1>
+
+
+        <div class="row">
+
+            <div class="blog-col" style="margin-top: 150px;" >
+
+                <a href="EmlakSitesi.html" >
+                    <img src="resimler/arkaplan.jpeg" alt="ilan1">
+                </a>
+                <h2>Müstakil Ev</h2>
+            </div>
+
+            <div class="blog-col" style="margin-bottom: 20px;">
+    
+                <a href="EmlakSitesi.html">
+                    <img src="resimler/villa1.jpeg" alt="ilan2">
+                </a>
+                <h2 style="padding-bottom:110px ;">Villa</h2>
+
+
+                <a href="EmlakSitesi.html">
+                    <img src="resimler/apartmanmıdedi.jpeg"ilan3">
+                </a>
+                <h2>Apartman</h2>
+            </div>
+
+            <div class="blog-col" style="margin-top: 150px;">
+                <a href="EmlakSitesi.html">
+                    <img src="resimler/tarladırma.jpeg" alt="ilan1"></a>
+                <h2>Arsa</h2>
+                
+            </div>
+
+        </div>
+      
+    </section>
+
+    <section id="iletişim" class="bu">
+        <h1>HAKKIMIZDA</h1>
+        <a href="iletişim.html" class="hero-btn">Bize Ulaşın</a>
+        <p>
+İster satılık/kiralık, ister yatırımlık olsun aranan emlağı en hızlı ve en kolay şekilde bulma fırsatı sunmak üzere  Türkiye’de kullanıcılarına hizmet olarak sunan ilk ve tek gayrimenkul listeleme portalıyız.
+Türkiye gayrimenkul sektöründe uçtan uca inovatif çözümler sunma vizyonu ile gayrimenkulde ilk akla gelen teknolojik platform olma yolunda ilerliyoruz.
+2014 yılında, erken aşama ve büyümekte olan teknoloji girişimlerine yatırım yapan iLab bünyesine katıldık.</p>
+        
+    </section>
+        <style>
+        .header{
+            background-image:url(img/arkaplan.jpeg);
+            background-size: cover;  
+        }
+
+            .dropdown-container {
+        display: none;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-btn {
+        background-color: wheat;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        }
+
+        .dropdown-btn:hover {
+        background-color: #6893ff85;
+        }
+
+        .dropdown-container div {
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-container div:hover {
+        background-color: #f1f1f1;
+        }
+
+        .show {
+        display: block;
+        }
+        .bu{
+            height: 400px;
+
+        }
+        </style>
+        </head>
+        </html>
+        <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+         });
+        }
+        </script>
+    </footer>
+
+</body>
+</html>

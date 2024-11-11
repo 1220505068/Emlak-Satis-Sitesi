@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="AdminPaneli.css">
+
+	<title>Admin Paneli</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text">Admin Paneli</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Gösterge Paneli</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analizler</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Mesajlar</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Ekip</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Ayarlar</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Çıkış Yap</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+
+			<a href='javascript:;' onclick='openNot();'>
+				<img src="notification.png" alt="?" style="width: 23px; height: 23px;">
+			</a>
+			<a href="Sayfalar/iletişim.html" class="profile">
+				<img src="avatar3.png">
+			</a>
+		</nav>
+
+		<div id="not" class="notification-popup">
+			<div class="notification-container">
+				<ul>
+					<li>
+						<h2>bildirim1</h2>
+					</li>
+					<li>
+						<h2>bildirim2</h2>
+					</li>
+					<li>
+						<h2>bildirim3</h2>
+					</li>
+					<li>
+						<h2>bildirim4</h2>
+					</li>
+					<li>
+						<h2>bildirim5</h2>
+					</li>
+					<li>
+						<h2>bildirim6</h2>
+					</li>
+					<li>
+						<h2>bildirim7</h2>
+					</li>
+					<li>
+						<h2>bildirim8</h2>
+					</li>
+
+				</ul>
+				<button type="button" class="btn cancel" onclick='closeNot()'>Close</button>
+			</div>
+				
+
+		</div>
+		<!-- NAVBAR -->
+
+
+
+		
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Gösterge Paneli</h1>
+				</div>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>102</h3>
+						<p>Yeni Görev</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>283</h3>
+						<p>Ziyaretçiler</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>12.268,532 TL</h3>
+						<p>Toplam Satış</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Geçmiş Görevler</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Kullanıcı</th>
+								<th>Tarih</th>
+								<th>Durum</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="avatar3.png">
+									<p>Efe Can Dönmez</p>
+								</td>
+								<td>01-11-2023</td>
+								<td><span class="status completed">Tamamlandı</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="avatar (1).png">
+									<p>Ali AKCAN</p>
+								</td>
+								<td>07-12-2023</td>
+								<td><span class="status pending">Bekliyor</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="avatar (2).png">
+									<p>Fatih ÇİÇEK</p>
+								</td>
+								<td>17-12-2023</td>
+								<td><span class="status process">İşleniyor</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="avatar.png">
+									<p>Mehmet Hakan GİRGİN</p>
+								</td>
+								<td>30-12-2023</td>
+								<td><span class="status pending">Bekliyor</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+					<div class="urun-ekleme">
+						<div class="form-container">
+							<form action="">
+								<h4 style="margin-bottom: 30px; font-size: large;"><strong>İLAN EKLEME</strong></h4>
+									<div class="Mülk">
+										<select>
+										  <option value="0">Lütfen Mülkün Türünü Seçiniz:</option>
+										  <option value="1">Arsa</option>
+										  <option value="2">Ev</option>
+										  <option value="3">Villa</option>
+										  <option value="4">Daire</option>
+										</select>
+									  </div>
+									  <label for="isim">Lütfen ilan adını giriniz:</label><br>
+									  <input type="text" id="isim" placeholder="İlan Adı"><br>
+									  <label for="adres">Lütfen ilanın adresini giriniz:</label><br>
+									  <input type="text" id="adres" placeholder="İlan Adresi"><br>
+									  <label for="alan">Lütfen ilanın metrekaresini giriniz:</label><br>
+									  <input class="alan" type="number" id="alan" placeholder="İlanın metrekaresi"> <strong>m²</strong><br>
+									  <textarea name="detay" id="id" cols="40" rows="5" placeholder="diğer detaylar"></textarea>
+									  <button type="submit" onclick='mesaj()'>EKLE</button>
+									</form>
+						</div>
+					</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="AdminPaneli.js"></script>
+</body>
+</html>

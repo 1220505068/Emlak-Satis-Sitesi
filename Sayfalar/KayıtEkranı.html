@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+          background-color: darkslategray;
+          background-image: url(resimler/ciaran-o-brien-LoGWCnEVDgU-unsplash.jpg);
+          background-size: 100% 120%;
+          background-repeat: no-repeat;
+      }
+      
+      .container {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f4f4f4;
+      }
+      
+      h2 {
+        text-align: center;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"]{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      a :hover{
+          color: darkblue;
+  
+      }
+</style>   
+
+</head>
+<body>
+
+    <form action="action_page.php">
+        <div class="container">
+          <h1>Kayıt Ol</h1> 
+          <a href="EmlakSitesi.html">
+            <img style="width: 25px; height: 25px; margin-left: 5px;" src="resimler/2144.png" alt="Anasayfa">
+          </a>
+          <hr>
+          <label for="email"><b>Eposta Adresi</b></label>
+          <input type="text" placeholder="E-mail Giriniz" name="email" required>
+      
+          <label for="psw"><b>Şifre</b></label>
+          <input type="password" placeholder="Şifre Giriniz" name="psw" required>
+      
+          <label for="psw-repeat"><b>Şifre Tekrar</b></label>
+          <input type="password" placeholder="Şifreyi Tekrar Giriniz" name="psw-repeat" required>
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Beni Hatırla
+          </label>
+          <a href="GirişEkranı.html">Zaten hesabın var mı?</a>
+      
+          <p>Üye olarak şartlarımızı ve politikalarımızı kabul etmiş olursunuz. <br><a href="#" style="color:dodgerblue">Şartlar&Politikalar</a></p>
+         <input type="submit" value="Kayıt Ol">
+
+        </div>
+      </form>
+
+    
+</body>
+</html>

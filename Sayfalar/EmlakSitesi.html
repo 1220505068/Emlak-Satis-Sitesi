@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emlak Satış Sitesi</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="EmlakSitesi.css">
+</head>
+<body>
+
+    
+<div class="topnav">
+    <h4>EMLAK SATIŞ SİTESİ</h4>
+
+    <a href="KayıtEkranı.html">Kayıt Ol</a>
+    <a href="GirişEkranı.html">Giriş Yap</a>
+    <a href='javascript:;' onclick='openForm();'>Hata Bildir!</a>
+    <a href="iletişim.html">İletişim</a>
+    <a style="color: black;" href="AnaSayfa.html">Anasayfa</a>
+</div>
+
+
+
+
+        <div class="form-popup" id="myForm">
+            <form action="" class="form-container">
+             <h1>Hata Bildir</h1>
+            <label for="ad"><b>İsim</b></label>
+            <input type="text" placeholder="İsminizi giriniz" name="ad" required>
+            <label for="ad"><b>Soy isim</b></label>
+            <input type="text" placeholder="Soy isminizi giriniz" name="soyad" required>
+            <label for="email"><b>E-posta</b></label>
+            <input type="text" placeholder="Eposta giriniz" name="email" required>
+            <label for="title"><b>Başlık</b></label>
+            <input type="text" placeholder="Sorunu özetleyiniz" name="ad" required>
+            <strong>Detaylar</strong>
+            <textarea for="text" name="detay" placeholder="Lütfen sorununuzdan detaylıca bahsedin" rows="5" cols="40"></textarea>
+
+            <button type="submit" class="btn">Gönder</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="resimler/villa1.jpeg" alt="Mülk" style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk" style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+            <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+
+            </div>
+        </div>
+    </div>
+ 
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <img src="img_avatar.png" alt="Mülk"  style="width:300px;height:300px;">
+             </div>
+            <div class="flip-card-back">
+              <h1>Mülk1</h1> 
+            <p>Mülk ile ilgili bilgiler</p> 
+            <p>detaylar</p>
+            <a href='javascript:;' onclick='fav();'> 
+                <img class="fav" id="fav1" src="resimler/1480685.png" alt="fav" style="width: 50px; height: 50px;">
+            </a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+    <!--Foote Kısmı -->
+
+
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <ul>
+               <li><a href="#">Hakkımızda</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <ul>
+               <li><a href="iletişim.html">İletişim</a></li>
+             </ul>
+           </div>
+         </div>
+        </div>
+     </footer>
+
+
+<script src="EmlakSitesi.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
